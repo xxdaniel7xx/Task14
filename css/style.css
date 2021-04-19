@@ -1,53 +1,50 @@
+/*fonts*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet');
 
 @import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
 
-body,.body {
+/*titles & font styles*/
+
+.body {
     margin: 0;
     padding: 0;
-}
-
-
-.section {
-    max-width: border-box;
-}
-
-/* Fonts & texts*/
-
-h1,
-h2,
-h3,
-p,
-span,
-.button {
     font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+.h1 {
     font-size: 48px;
 }
 
-h2 {
+.h2 {
     font-size: 32px;
 }
 
-h3 {
+.h3 {
     font-size: 21px;
 }
 
-.lorem_ipsum {
+.loremIpsum {
     font-size: 16px;
     color: #727272;
 }
 
-#wd {
-    font-family: 'Revalia', sans-serif;
-    font-size: 57.6px;
+/*button style*/
 
-    color: #34547A;
+.button {
+    padding: 10px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    width: 225px;
+    height: 65px;
+    justify-content: center;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #34547A;
 }
 
-/* fonts & texts end*/
 
 /*navbar*/
 
@@ -56,7 +53,7 @@ h3 {
     margin-top: 68px;
 }
 
-.navbar li {
+.navbar__list__item {
     display: inline-flex;
     flex-direction: row;
     justify-content: left;
@@ -69,7 +66,7 @@ h3 {
     white-space: nowrap;
 }
 
-.nav-link  {
+.navbar__list__item__link  {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -97,27 +94,32 @@ h3 {
     font-size: 1.5rem;
 }
 
-/*navbar end*/
+/*header*/
 
-.button {
-    padding: 10px;
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    width: 225px;
-    height: 65px;
-    justify-content: center;
-    font-size: 16px;
-    color: #ffffff;
-    text-transform: uppercase;
-    background-color: #34547A;
+.header {
+    max-width: border-box;
+    background-color: #EEEFF1;
+    margin: 0;
+    padding: 0;
 }
 
+.header__logo {
+    font-family: 'Revalia', sans-serif;
+    font-size: 57.6px;
 
+    margin-top: 46px;
+}
+
+.header__logo__link:link {
+    text-decoration: none;
+    color: #34547A;
+}
 /*Section1*/
 
-.section_1 {
+.section1 {
     background-color: #EEEFF1;
+    padding-top: 162px;
+    padding-bottom:157px;
 }
 
 .container {
@@ -125,139 +127,128 @@ h3 {
     padding: 0;
 }
 
-.section_1 .container {
-    padding-bottom:157px;
-}
-
-.section_1 .row_2 img {
+.section1-img__img {
     width: 100%;
     height: auto;
     margin-top: 30px;
 }
 
-.section_1 .row_1 .logo {
-    margin-top: 46px;
-}
-
-.section_1 .row_2 {
-    margin-top: 162px;
-}
-
-.section_1 .lorem_ipsum {
+.section1__loremIpsum {
     margin-top: 60px;
     margin-bottom: 60px;
 }
 /*Section 2*/
 
-.section_2 .container {
+.section2 {
     justify-content: center;
     margin-top: 112px;
     margin-bottom: 100px;
     text-align: center;
 }
 
-.section_2 .lorem_ipsum {
+.aboutMe__loremIpsum {
     margin-top: 50px;
 }
 
-/*Section 3*/
+/*Section3*/
 
-.section_3 {
+.section3 {
     background-color: #34547A;
 }
 
-.section_3 .row {
+.section3-row {
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-.section_3 .row .projects_span {
+.section3-projects {
     justify-content: center;
     display: inline-flex;
     flex-direction: row;
     margin: 10px 0px;
 }
 
-.section_3 .projects {
+.section3-projects__span {
     color: #ffffff;
     margin-left: 20px;
+
 }
 
-.section_3 .fourty {
+.section3-projects__span__forty {
     font-weight: bold;
 }
 
 /*Section 4*/
 
-.section_4 .row {
+.section4-row {
     margin-top: 102px;
     margin-bottom: 101px;
     display: flex;
     align-content: flex-end;
 }
 
-.section_4 .my_skills {
+.section4-mySkills {
     flex-direction: column;
     justify-content: flex-start;
     margin-top: 102px;
 
 }
 
-.section_4 progress {
+.mySkills__progress {
     border-radius: 0;
     height: 4px;
     width: 100%;
     margin-bottom: 30px;
 }
-.section_4 progress[value]::-webkit-progress-bar {
+
+.mySkills__progress[value]::-webkit-progress-bar {
     background-color: #C4C4C4;
 }
 
-.section_4 progress[value]::-webkit-progress-value {
+.mySkills__progress[value]::-webkit-progress-value {
     background-color: #34547A;
 }
 
-.section_4 h2 {
+.mySkills__h2 {
     margin-bottom: 50px;
 }
 
-.section_4 p {
+.mySkills__p {
     margin-bottom: 20px;
 }
 
-#face {
+.section4-photo__img {
     width: 100%;
     height: auto;
 }
 
 /*Section 5*/
 
-.section_5 {
+.section5 {
     background-color: #EEEFF1;
 }
 
-.section_5 .row_1 {
+.section5-row1 {
     padding-top: 100px;
     padding-bottom: 57px;
     text-align: center;
 }
 
-.section_5 .row_2 {
+.section5-row2 {
     padding-bottom: 100px;
 }
 
-.section_5 h2 {
+.howIWork__h2 {
     margin-bottom: 50px;
 }
 
 
 
-.section_5 #code {
-
+.section5-video__code {
     z-index: 1;
 }
 
-.section_5 .row_2 input {
+.section5-video__img {
     width:10%;
     height:auto;
     position: absolute;
@@ -268,72 +259,75 @@ h3 {
 
 /*Section 6*/
 
-.section_6 .row .gal{
+.imgBlock {
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-.section_6 img {
+.imgBlock__link__img {
     max-width: 100%;
     height: auto;
 }
 
-.section_6 .gal:hover {
+.imgBlock:hover {
     background-color: #34547A;
     background-image: url("../img/eye.png");
     background-repeat: no-repeat;
     background-position: center, center;
 }
 
-.section_6 img:hover {
+.imgBlock__link__img:hover {
     -webkit-filter: opacity(50%);
 }
 
 /*Section 7*/
 
-.section_7 .container {
+.section7 {
     margin-top: 72px;
     margin-bottom: 100px;
 }
 
-.section_7 img {
+.microsoftImg__link__img {
     max-width: 100%;
     height: auto;
 }
 
 /*Section 8*/
 
-.section_8 {
+.section8 {
     background-color: #EEEFF1;
-}
-
-.section_8 .container {
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-.section_8 .row_1 {
+.section8-row {
     margin-bottom: 65px;
     text-align: center;
 }
 
-.section_8 .row_1 h2 {
+.service__h2 {
     margin-bottom: 50px;
 }
 
-.section_8 form {
+.section8-form {
     display: flex;
     justify-content: center;
 }
 
-.section_8 form input{
+.section8-form__input_name {
     width: 48%;
     border-style: none;
     height: 50px;
 }
 
-.section_8 form textarea {
+.section8-form__input_email {
+    width: 48%;
+    border-style: none;
+    height: 50px;
+}
+
+.section8-form__textArea {
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -341,7 +335,7 @@ h3 {
     border-style: none;
 }
 
-.section_8 button {
+.section8-form__button {
     margin-top: 50px;
 }
 
@@ -349,24 +343,23 @@ h3 {
 
 .footer {
     background-color: #34547A;
-}
-
-.footer .container {
     padding: 50px 0px;
 }
 
-.footer h3 {
+.footer-rights__h3 {
     color: #ffffff;
 }
 
-.footer span {
+.footer-rights__span {
     color: #ffffff;
     font-size: 13px;
 }
 
-.footer img {
+.footer-contacts__link__img {
     margin: 10px 11px;
 }
+
+/*media features*/
 
 @media (max-width: 573px) {
 
@@ -374,23 +367,23 @@ h3 {
         padding: 20px;
     }
 
-    h1 {
+    .h1 {
         font-size: 30px;
     }
 
-    h2 {
+    .h2 {
         font-size: 25px;
     }
 
-    h3 {
+    .h3 {
         font-size: 16px;
     }
 
-    p, span {
+    .loremIpsum {
         font-size: 14px;
     }
 
-    .section_1 .row_2 img {
+    .section1-img__img {
         margin-bottom: 40px;
     }
 

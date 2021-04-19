@@ -1,0 +1,7 @@
+.mySkills__progress[value]::-webkit-progress-bar {
+    background-color: #C4C4C4;
+}
+
+.mySkills__progress[value]::-webkit-progress-value {
+    background-color: #34547A;
+}

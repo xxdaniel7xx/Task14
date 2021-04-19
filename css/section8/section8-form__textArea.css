@@ -1,0 +1,7 @@
+.section8-form__textArea {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 175px;
+    border-style: none;
+}

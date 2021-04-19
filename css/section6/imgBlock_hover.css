@@ -1,0 +1,6 @@
+.imgBlock:hover {
+    background-color: #34547A;
+    background-image: url("../../img/eye.png");
+    background-repeat: no-repeat;
+    background-position: center, center;
+}
