@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Генератор случайных пользователей</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-md-6 offset-md-3 text-center">
+            <h1>Практическая работа. Модуль 13.</h1>
+            <h2>Генератор пользователей</h2>
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-md-6 offset-md-3">
+            <div class="text-center block">
+                <div class="block-header">
+                    <p class="m-0">Окно результатов генерации</p>
+                </div>
+                <div class="block-body">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Фамилия: <span id="surnameOutput"></span></h3>
+                            <h3>Имя: <span id="firstNameOutput"></span></h3>
+                            <h3>Отчество: <span id="fatherNameOutput"></span></h3>
+                            <h4>Профессия: <span id="professionOutput"></span></h4>
+                            <p>
+                                <span>Пол: <span id="genderOutput"></span></span>
+                                <span>, </span>
+                                <span>Дата рождения : <span id="birthYearOutput"></span></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between m-0 block-footer">
+                    <div class="col-md-5 m-1">
+                        <button class="btn btn-success btn-block" id="generateBtn">Генерация</button>
+                    </div>
+                    <div class="col-md-5 m-1">
+                        <button class="btn btn-danger btn-block" id="clearBtn">Очистить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="personGenerator.js"></script>
+<script src="init.js"></script>
+</body>
+</html>
